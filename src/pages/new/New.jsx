@@ -1,8 +1,12 @@
 import "./new.scss";
 
-function New() {
+import React from 'react'
+
+const New = () => {
     return (
-        <div>New</div>
+        <div>
+
+        </div>
     )
 }
 

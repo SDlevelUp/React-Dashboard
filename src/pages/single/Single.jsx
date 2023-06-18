@@ -1,8 +1,12 @@
 import "./single.scss"
 
-function Single() {
+
+
+const Single = () => {
     return (
-        <div>Single</div>
+        <div>
+
+        </div>
     )
 }
 
