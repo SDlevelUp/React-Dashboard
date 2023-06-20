@@ -1,0 +1,60 @@
+.widget {
+  flex: 1;
+  padding: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.45);
+}
+.widget .left,
+.widget .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.widget .left .title,
+.widget .right .title {
+  font-weight: bold;
+  font-size: 15px;
+  color: #999;
+}
+.widget .left .counter,
+.widget .right .counter {
+  font-size: 28px;
+  font-weight: 300;
+}
+.widget .left .link,
+.widget .right .link {
+  width: -moz-max-content;
+  width: max-content;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  cursor: pointer;
+}
+.widget .left .percentage,
+.widget .right .percentage {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  color-scheme: light;
+}
+.widget .left .percentage.positive,
+.widget .right .percentage.positive {
+  color: green;
+}
+.widget .left .percentage.negative,
+.widget .right .percentage.negative {
+  color: #fe0000;
+}
+.widget .left .icon,
+.widget .right .icon {
+  font-size: 18px;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  align-self: flex-end;
+  color: white;
+}/*# sourceMappingURL=widget.css.map */
