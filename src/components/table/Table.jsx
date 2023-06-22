@@ -13,25 +13,26 @@ const List = () => {
     const rows = [
         {
             id: 1631484,
-            product: 'Xiaomi Mi 11',
+            product: 'iPhone 13',
+
             img:
-                'https://images.pexels.com/photos/1631484/pexels-photo-1631484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                ' https://img.freepik.com/photos-gratuite/composition-elegante-du-smartphone_23-2149437106.jpg?size=626&ext=jpg&ga=GA1.1.129745204.1674652457&semt=ais',
             name: 'Jean La Tour',
             date: '12 Avril 2023',
-            amount: 2500,
+            amount: 909,
             method: 'Paypal',
             status: 'Approuvé',
         },
         {
             id: 12589425,
-            product: 'Xiaomi Mi 11',
+            product: 'Acer Predator Helios 300 ',
             img:
-                'https://images.pexels.com/photos/1631484/pexels-photo-1631484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                'https://images.acer.com/is/image/acer/Predator-Helios-300-PH-315-54-Backliton-Black-01a?$Product-Cards-XL$',
             name: 'Maxime Aubert',
             date: '12 Avril 2023',
             amount: 2500,
             method: 'Virement bancaire',
-            status: 'Approuvé',
+            status: 'EnCours',
         },
         {
             id: 13452147,
@@ -53,7 +54,7 @@ const List = () => {
             date: '12 Avril 2023',
             amount: 2500,
             method: 'Paypal',
-            status: 'En attente',
+            status: 'EnCours',
         },
         {
             id: 17489642,
@@ -75,7 +76,18 @@ const List = () => {
             date: '12 Avril 2023',
             amount: 2500,
             method: 'Virement bancaire',
-            status: 'En attente',
+            status: 'Approuvé',
+        },
+        {
+            id: 14520132,
+            product: 'Xiaomi Mi 11',
+            img:
+                'https://images.pexels.com/photos/1631484/pexels-photo-1631484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            name: 'Romane Doisneau',
+            date: '12 Avril 2023',
+            amount: 2500,
+            method: 'Virement bancaire',
+            status: 'Approuvé',
         },
     ];
 
@@ -107,8 +119,8 @@ const List = () => {
                             <TableCell className="tableCell">{row.date}</TableCell>
                             <TableCell className="tableCell">{row.amount}</TableCell>
                             <TableCell className="tableCell">{row.method}</TableCell>
-                            <TableCell className={`tableCell status ${row.status.includes('En attente') ? 'pending' : ''}`}>
-                                {row.status}
+                            <TableCell className="tableCell">
+                                <span className={`status ${row.status}`}>{row.status}</span>
                             </TableCell>
                         </TableRow>
                     ))}

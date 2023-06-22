@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .table {
   display: flex;
   align-items: center;
@@ -13,8 +14,12 @@
 .table .status {
   padding: 5px;
   border-radius: 5px;
-  color: green;
 }
-.table .status.pending {
+.table .status.Approuvé {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.151);
+}
+.table .status.EnCours {
   color: goldenrod;
+  background-color: rgba(189, 189, 3, 0.103);
 }/*# sourceMappingURL=table.css.map */
