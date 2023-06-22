@@ -22,6 +22,12 @@ const Home = () => {
                     <Featured />
                     <Chart />
                 </div>
+                <div className="list-container">
+                    <div className="list-title">
+                        Les dernières transactions
+                    </div>
+
+                </div>
             </div>
         </div>
     )

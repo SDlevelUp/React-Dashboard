@@ -12,4 +12,14 @@
 }
 .home .charts {
   padding: 5px 20px;
+}
+.home .list-container {
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  margin: 20px;
+}
+.home .list-container .list-title {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=home.css.map */
