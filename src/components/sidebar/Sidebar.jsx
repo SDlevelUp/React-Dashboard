@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import "./sidebar.scss";
 import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
@@ -13,6 +15,12 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 const Sidebar = () => {
+
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    };
     return (
         <div className="sidebar">
             <div className="top">

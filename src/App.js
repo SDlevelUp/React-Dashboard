@@ -4,9 +4,11 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import {  DarkContext } from './Context/DarkContext';
 
 function App() {
     return (
+
         <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<Home />} />
